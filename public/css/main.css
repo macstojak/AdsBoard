@@ -1,0 +1,121 @@
+body{
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+.form{
+    font-family: 'Quicksand', sans-serif;
+}
+.searchBar{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.textCenter{
+    text-align: center;
+}
+
+.main{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    width: 70%;
+    color: orangered;
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar-expand-lg{
+    background-color: orangered;
+    opacity: 1;
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover{
+    color: red;
+    background-color: white;
+}
+.navbar-nav .nav-link{
+    color: white;
+    background-color: tomato;
+    border: 2px solid white;
+    border-radius: 15%;
+}
+li .nav-link:hover{
+    color: red;
+    background-color: white;
+}
+.ad{
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: block;
+    text-align: left;
+    width: 70%;
+    border: 3px solid red;
+    background-color: tomato;
+    padding: 10px 30px;
+}
+.ad h1{
+    font-style: italic;
+}
+button .btn-outline-success{
+    color:white;
+}
+ul li{
+    border: 2px solid red;
+    border-radius: 15%;
+    list-style-type: none;
+
+}
+.navbar-expand-lg span{
+    color: white;
+}
+.adImage{
+    margin: 0 auto;
+    height: auto;
+    max-width:100%;
+    width: 50%;
+    display: block;
+    border: 5px solid white;
+    border-radius: 15%;
+}
+ .form{
+    width: 30%;
+    margin: 0 auto;
+}
+
+span h3{
+    display:inline;
+}
+span a .login{
+    display: inline;
+}
+.filter{
+    display: inline-block;
+    text-align: center;
+    width:50%;
+    
+}
+.filter > * {
+    margin-bottom: 15px;
+}
+.textAnimated{
+    width: 50%;
+
+    margin: 25px auto 25px auto;
+    border: transparent;
+    border-radius: 5px;
+    animation: textPulse 2s infinite alternate-reverse;
+}
+@keyframes textPulse{
+    from{ 
+        color: tomato;
+        background-color: white;
+    }
+    to{
+        color: white;
+        background-color: tomato;
+    }
+}

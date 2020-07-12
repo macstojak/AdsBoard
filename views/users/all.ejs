@@ -1,0 +1,13 @@
+<%- include("../layout/header") -%>
+
+<div class="container">
+    <ul>
+        <%if(users){%>
+        <% users.forEach(user=>{ %>
+            <h1><%=user.lastName%></h1>
+
+        <% })} %>
+    </ul>
+</div>
+
+<%- include("../layout/footer") -%>

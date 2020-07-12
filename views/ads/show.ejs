@@ -1,0 +1,29 @@
+<%- include("../layout/header") -%>
+
+<div class="container main">
+    
+    
+            <% if(ad){%>
+           <div class="ad" style="margin-top: 30px; padding:25px;">
+                <h1 class="textCenter"><%=ad.title%></h1><br/>
+                <img class="adImage" src="<%= ad.photoUrl%>" >
+                                <h3> <%=ad.type%></h3><br/>
+                                <h4><%=ad.description%></h4><br/>
+                                <h1><%=ad.price%>$</h1><br/>
+                                <h1>Dane kontaktowe: </h1>
+                                    <h3><%= ad.user.email %> </h3>
+                                    <h3><%=ad.user.phone%></h3>
+                                    <span>
+                                        Categories: 
+                                        <% ad.categories && ad.categories.forEach(category=>{ %>
+                                        <h3 class="badge badge-success"><%= category %></h3>
+                                        <% })%>
+                                        </span>
+                                <p>Added on: <%=Date(ad.date)%> by <%= ad.user.username %></p><br/>
+                            </div>
+            <% }else{ %>
+                <h3>No ad found :(</h3>
+                <% } %>
+</div>
+
+<%- include("../layout/footer") -%>

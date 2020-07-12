@@ -1,0 +1,31 @@
+<%- include("layout/header") -%>
+
+      
+<div class="container main">
+    <h1 style="display:block; text-align: center; color: tomato; font-weight:bold">ADS BOARD - broad board of ads</h1>
+
+    <h1 class="textAnimated">Hot offer</h1>
+    <% if(ad){ %>
+        
+            
+            <div class="ad">
+                <h1 class="textCenter">  <%=ad.title%></h1><br/>
+                <img class="adImage" src="<%=ad.photoUrl%>" alt="">
+               
+                <h4><%=ad.description%></h4><br/>
+                <h1><%=ad.price%>$</h1><br/>
+                <span>
+                  
+                    <% ad.categories && ad.categories.forEach(category=>{ %>
+                    <h3 class="badge badge-success"><%= category %></h3>
+                    <% })%>
+                    </span>
+                <p>Added on: <%=moment(Date(ad.date)).format("DD.mm.yyyy")%> by <%= ad.user.username %></p><br/>
+            </div>
+           
+        
+    <% } %>
+</div>
+
+        <%- include("layout/footer") -%>
+      
