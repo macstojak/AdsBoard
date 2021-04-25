@@ -75,6 +75,6 @@ app.use("/ads", adRoutes);
 app.use("/users", userRoutes);
 
 
-app.listen(4000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("server started")
 })
